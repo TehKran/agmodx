@@ -2887,7 +2887,8 @@ SetPlayerEquipment(id) {
 	}
 
 	if (get_pcvar_bool(gCvarStartLongJump)) {
-		hl_set_user_longjump(id, true);
+		// hl_set_user_longjump(id, true);
+		hl_set_user_longjump(id, true, false); // To disable LJ pickup sound.
 	}
 
 	ResetBpAmmo(id);
